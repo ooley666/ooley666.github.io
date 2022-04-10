@@ -1,0 +1,51 @@
+.catalogue
+    padding-bottom: 79px
+    &__header   
+        font-weight: 400
+        font-size: 30px
+        line-height: 45px
+        color: #0D0D0D
+        text-align: center
+        text-transform: uppercase
+    &__tabs 
+        margin-top: 46px
+        display: flex
+        list-style: none
+        justify-content: center
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        width: 222px
+        height: 52px
+        border: 2px solid #D0D0D0
+        background: rgba(0, 0, 0, 0.0001)
+        transform: skew(-20deg)
+        text-align: center
+        margin: 0 10px
+        transition: all 0.5s 
+        &:hover
+            box-shadow: 3px 3px 10px $primary_color
+            border: none
+            cursor: pointer
+        div
+            display: block
+            transform: skew(20deg)
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: 400
+            font-size: 18px
+            line-height: 48px
+            color: #6B6B6B
+    .catalogue__tab-active
+        background: $primary_color
+        border: none
+        div
+            color: #ffffff
+    &__content
+        margin-top: 54px
+        display: none
+        flex-wrap: wrap
+        &_active
+            display: flex
+@import blocks/_catalogue-item
+@import blocks/_catalogue-descr

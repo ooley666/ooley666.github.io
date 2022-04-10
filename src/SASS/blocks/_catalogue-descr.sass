@@ -1,0 +1,40 @@
+.catalogue-descr
+    width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-left: 20px
+    transform: translateX(-0%)
+    &_active
+        transform: translateX(-100%)
+        margin-left: 0
+    &__list 
+        list-style: none
+        padding-left: 19px
+        margin-bottom: 0
+        position: relative
+    &__point
+        font-weight: 300
+        font-size: 14px
+        color: #555555
+        margin-bottom: 10px
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            left: -18px
+            top: 6px
+            width: 8px
+            height: 8px
+            background: $primary_color
+    &__back
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(calc( -50% - 19px ))
+        color: $primary_color
+        margin-top: 34px
+        text-transform: uppercase
+        &:hover
+            cursor: pointer

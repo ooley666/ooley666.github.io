@@ -1,0 +1,73 @@
+.catalogue-item
+    width: 303px
+    min-height: 442px
+    padding: 20px 20px
+    border: 2px solid #E8E8E8   
+    overflow: hidden
+    margin: 6px
+
+    &__image
+        max-width: 100%
+        max-height: 200px
+        display: block
+        margin: 0 auto
+    &__title
+        font-weight: 700
+        font-size: 16px
+        line-height: 25px
+        color: #0D0D0D
+        text-align: center
+    &__subtitle
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px 
+        color: #0D0D0D
+        text-align: center
+    &__more
+        font-weight: 500
+        font-size: 14px
+        color: $primary_color
+        display: block
+        text-align: center
+        margin-top: 10px
+        &:hover
+            cursor: pointer
+    hr
+        border-bottom: none
+        width: 100%
+        color: black
+    
+    &__footer  
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__prices
+        display: flex
+        flex-direction: column
+        
+    &__price
+        font-weight: 700
+        font-size: 20px
+        line-height: 20px
+        color: #050505
+    &__price-strk
+        font-weight: 300
+        font-size: 14px
+        line-height: 14px
+        color: #555555
+        text-decoration: line-through
+    &__wrapper
+        width: calc( 200% + 40px )
+        display: flex
+
+    &__content
+        width: 50%
+        margin-right: 0px
+        transform: translateX(-100%)
+
+        &_active
+            transform: translateX(0%)
+            margin-right: 20px
+
+
+        
